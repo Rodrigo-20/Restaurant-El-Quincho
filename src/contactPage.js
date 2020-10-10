@@ -1,33 +1,56 @@
 import create from 'dom-create-element';
-import {checkTab, showMenu,tabs } from './index';
+import { checkTab, showMenu, tabs } from './index';
 
-function loadContactPage(){
+function loadContactPage() {
 
- while(showMenu.firstChild){
-     showMenu.removeChild(showMenu.firstChild);
- }
- checkTab();
- const item1 = create({
-    selector : 'div',styles:'menu-item',
-    children:[
-        create({
-        selector:'div',styles:'item-description',
-        children:
-            [create({
-                selector:'h2',html:'Choripan'
+    while (showMenu.firstChild) {
+        showMenu.removeChild(showMenu.firstChild);
+    }
+    checkTab();
+    const contactPage = create({
+        selector: 'div',
+        styles: 'contactPage'
+    });
+    const item1 = create({
+        selector: 'div',
+        styles: "contactInfo",
+        children: [
+            create({
+                selector: 'p',
+                html: 'Adress: Av Belgrano 1984, Salta, Argentina'
             }),
             create({
-                selector:'p',html:`It's consider to be one of the most traditional sandwiches from Argentina and one of the <br> most teasteful pieces of meat that you ever gonna try ` 
-            })]}),
-        create({
-                selector:'img',
-                styles:'img-box',
-                src:'../images/chori_resize.jpg',
-                
+                selector: 'p',
+                html: 'Tel: 03874220908'
+            }),
+            create({
+                selector: 'p',
+                html: 'Mail: elquincho@gmail.com'
+            })
+        ]
+    });
+    const item2 = create({
+        selector: 'div',
+        styles: 'icon',
+        children: [
+            create({
+                selector: 'p',
+                id: 'signa',
+                html: 'By Rodrigo '
+            }),
+            create({
+                selector: 'a',
+                link: 'https://github.com/Rodrigo-20',
+                target: '_blank',
+                children: create({
+                    selector: 'i',
+                    styles: 'fa fa-github',
+                })
             })]
-    
-});
-showMenu.appendChild(item1);   
+    });
+    contactPage.appendChild(item1);
+    contactPage.appendChild(item2);
+    showMenu.appendChild(contactPage);
 }
 
 export default loadContactPage;
