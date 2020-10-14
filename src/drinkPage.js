@@ -31,7 +31,7 @@ console.log(drinkTab);*/
       create({
         selector: "img",
         styles: "img-box",
-        src: "/images/salta.jpg",
+        src: "../dist/images/salta.jpg",
       }),
     ],
   });
@@ -56,7 +56,7 @@ console.log(drinkTab);*/
       create({
         selector: "img",
         styles: "img-box",
-        src: "/images/malbec.jpg",
+        src: "../dist/images/malbec.jpg",
       }),
     ],
   });

@@ -23,7 +23,7 @@ function loadFoodPage() {
             create({
                 selector: 'img',
                 styles: 'img-box',
-                src: '/images/chori_resize.jpg',
+                src: '../dist/images/chori_resize.jpg',
 
             })]
 
@@ -44,7 +44,7 @@ function loadFoodPage() {
             create({
                 selector: 'img',
                 styles: 'img-box',
-                src: '/images/costillar.jpg',
+                src: '../dist/images/costillar.jpg',
 
             })]
 
@@ -65,7 +65,7 @@ function loadFoodPage() {
             create({
                 selector: 'img',
                 styles: 'img-box',
-                src: '/images/empanadas.jpg',
+                src: '../dist/images/empanadas.jpg',
 
             })]
 
@@ -73,6 +73,7 @@ function loadFoodPage() {
     showMenu.appendChild(item1);
     showMenu.appendChild(item2);
     showMenu.appendChild(item3);
+
 };
 
 export default loadFoodPage
