@@ -31,7 +31,11 @@ console.log(drinkTab);*/
       create({
         selector: "img",
         styles: "img-box",
+<<<<<<< HEAD
         src: "../dist/images/salta.jpg",
+=======
+        src: "/images/salta.jpg",
+>>>>>>> 13c6760f9c49d38b5e1cce98ab3a5a3a661dbe8e
       }),
     ],
   });
@@ -56,7 +60,11 @@ console.log(drinkTab);*/
       create({
         selector: "img",
         styles: "img-box",
+<<<<<<< HEAD
         src: "../dist/images/malbec.jpg",
+=======
+        src: "/images/malbec.jpg",
+>>>>>>> 13c6760f9c49d38b5e1cce98ab3a5a3a661dbe8e
       }),
     ],
   });

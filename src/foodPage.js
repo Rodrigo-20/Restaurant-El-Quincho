@@ -73,7 +73,6 @@ function loadFoodPage() {
     showMenu.appendChild(item1);
     showMenu.appendChild(item2);
     showMenu.appendChild(item3);
-
 };
 
 export default loadFoodPage
