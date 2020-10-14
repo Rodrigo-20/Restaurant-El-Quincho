@@ -117,3 +117,34 @@ label{
     box-shadow: 5px 0 5px rgba(0, 0, 0, .25);
     font-weight: 500;
 }
+.contactPage{
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-between;
+}
+
+.contactInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.4em;
+    line-height: 40px;
+    padding-top: 20px;
+}
+
+.icon{
+    display: flex;
+    font-size: 46px;
+    padding-bottom: 20px;
+    
+}
+#signa{
+    font-size: 20px;
+    align-self: center;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
