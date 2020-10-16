@@ -1,5 +1,7 @@
 import create from "dom-create-element";
 import { showMenu, tabs, checkTab } from "./index";
+import Vino from './images/malbec.jpg'
+import Beer from './images/salta.jpg'
 
 function loadDrinkPage() {
   while (showMenu.firstChild) {
@@ -31,11 +33,7 @@ console.log(drinkTab);*/
       create({
         selector: "img",
         styles: "img-box",
-<<<<<<< HEAD
-        src: "../dist/images/salta.jpg",
-=======
-        src: "/images/salta.jpg",
->>>>>>> 13c6760f9c49d38b5e1cce98ab3a5a3a661dbe8e
+        src: Vino,
       }),
     ],
   });
@@ -60,11 +58,7 @@ console.log(drinkTab);*/
       create({
         selector: "img",
         styles: "img-box",
-<<<<<<< HEAD
-        src: "../dist/images/malbec.jpg",
-=======
-        src: "/images/malbec.jpg",
->>>>>>> 13c6760f9c49d38b5e1cce98ab3a5a3a661dbe8e
+        src: Beer,
       }),
     ],
   });

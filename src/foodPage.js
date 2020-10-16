@@ -1,6 +1,8 @@
 import create from 'dom-create-element';
 import { checkTab, showMenu, tabs } from './index';
-
+import Chori from './images/chori_resize.jpg';
+import Costillar from './images/costillar.jpg';
+import Empanadas from './images/empanadas.jpg';
 function loadFoodPage() {
 
     while (showMenu.firstChild) {
@@ -23,7 +25,7 @@ function loadFoodPage() {
             create({
                 selector: 'img',
                 styles: 'img-box',
-                src: '../dist/images/chori_resize.jpg',
+                src: Chori,
 
             })]
 
@@ -38,13 +40,13 @@ function loadFoodPage() {
                         selector: 'h2', html: 'Costillar a la estaca'
                     }),
                     create({
-                        selector: 'p', html: `It's consider to be one of the most traditional sandwiches from Argentina and one of the most teasteful pieces of meat that you ever gonna try `
+                        selector: 'p', html: `Tasteful ribs cooked in a slow manner (5 hours at least). Great to share with family and friends `
                     })]
             }),
             create({
                 selector: 'img',
                 styles: 'img-box',
-                src: '../dist/images/costillar.jpg',
+                src: Costillar,
 
             })]
 
@@ -59,13 +61,13 @@ function loadFoodPage() {
                         selector: 'h2', html: 'Empanadas'
                     }),
                     create({
-                        selector: 'p', html: `It's consider to be one of the most traditional sandwiches from Argentina and one of the most teasteful pieces of meat that you ever gonna try `
+                        selector: 'p', html: `A mix of meat, potato, egg, and much more wrap inside a delicious dough. It's one of the most traditional meals from the north of Argentina `
                     })]
             }),
             create({
                 selector: 'img',
                 styles: 'img-box',
-                src: '../dist/images/empanadas.jpg',
+                src: Empanadas,
 
             })]
 

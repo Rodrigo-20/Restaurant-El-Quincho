@@ -1,3 +1,4 @@
+import './style.css';
 import create from "dom-create-element";
 import loadDrinkPage from "./drinkPage";
 import loadFoodPage from "./foodPage";
